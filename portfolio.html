@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <title>Portfolio - Star Power</title>
+</head>
+
+<body>
+    <div class="hidden bg-white" id="popupForm">
+        <div id="pfInner" class="bg-black px-10 py-5 w-full lg:w-fit lg:px-20 lg:py-10">
+            <div class="flex justify-between mb-5 lg:mb-10">
+                <section class="">
+                    <section class="flex items-start">
+                        <h3 class="text-white font-medium text-xl tracking-[1.5px] lg:text-4xl" id="current-time"></h3>
+                        <p class="text-[#FFFFFF80] text-[0.625rem] lg:text-xs">WAT</p>
+                    </section>
+                    <h3 class="text-white text-base w-52 tracking-[0.5px] lg:tracking-[1px] lg:text-2xl">
+                        Let's build the future together
+                    </h3>
+                </section>
+                <section class="text-white font-light text-xl cursor-pointer lg:text-3xl" id="closePopupBtn">&times;</section>
+            </div>
+
+            <form class="">
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email">
+                </section>
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Project Name">
+                    <input type="text" placeholder="Budget">
+                </section>
+                <input class="lg:!w-[708px]" type="text" placeholder="Project Description">
+
+                <button
+                    class="text-white font-normal mt-4 rounded w-full bg-gradient-to-r from-[#90C] to-[#52006B] px-6 py-3"
+                    id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="bg-cover bg-top lg:h-screen" style="background-image: url('img/psBgImage.png');">
+        <div class="flex justify-between items-center mx-5 pt-6 bg-transparent lg:mx-20">
+            <img class="bg-gray-200 bg-opacity-50 p-3 rounded-full w-8 h-8 lg:w-20 lg:h-20" src="img/logo.png" alt="Logo">
+            <section id="headerLinks" class="hidden gap-10 items-center bg-transparent lg:flex">
+                <a href="index.html" class="">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="#" class="!font-medium">Portfolio</a>
+            </section>
+            <button id="openPopupBtn"
+                class=" text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:text-base lg:px-6 lg:py-2">Contact</button>
+        </div>
+
+        <div class="mt-6">
+            <section id="headerLinks" class="flex gap-6 items-center justify-center text-center bg-transparent lg:hidden">
+                <a href="index.html" class="">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="#" class="!font-medium">Portfolio</a>
+            </section>
+        </div>
+
+        <section class="text-center justify-center flex flex-col items-center pt-16 pb-16 lg:pb-0 lg:pt-44">
+            <h1 class="text-white tracking-[1px] font-medium text-2xl pb-4 px-5 lg:tracking-[2px] lg:text-7xl lg:px-24 lg:pb-8">Deep dive into our cases.</h1>
+            <h3 class="text-white tracking-[0.3px] text-[0.75rem] w-full leading-relaxed px-5 lg:leading-loose lg:tracking-[0.6px] lg:text-[1.375rem] lg:px-24">Over the last years
+                we’ve helped many of our clients build and accelerate their business. Here are some.</h3>
+        </section>
+    </div>
+
+    <div class="mt-12 mx-5 lg:mt-24 lg:mx-24">
+        <div class="tab flex flex-wrap gap-x-3 gap-y-4 items-center justify-start border w-full overflow-x-hidden overflow-auto mx-auto px-4 py-4 rounded-sm lg:gap-x-3 lg:gap-y-3 lg:px-2 lg:py-2 lg:rounded-full lg:flex-row lg:w-fit">
+            <button class="tablinks pl-0 lg:pl-4" onclick="openTab(event, 'graphics')" id="defaultOpen">Graphics</button>
+            <button class="tablinks" onclick="openTab(event, 'appdev')">App Development</button>
+            <button class="tablinks" onclick="openTab(event, 'webdev')">Web Development</button>
+            <button class="tablinks" onclick="openTab(event, 'tvapps')">TV Apps</button>
+            <button class="tablinks pl-0 lg:pr-4" onclick="openTab(event, 'itservices')">IT Services</button>
+        </div>
+        
+        <div class="pt-5 lg:pt-10">
+            <div id="graphics" class="tabcontent">
+                <section class="w-fit h-fit lg:w-[550px]">
+                    <img src="img/midImage2.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Yuck</span> - Portfolio site for digital company in Seatle</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage1.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Paylar</span> - Africa’s first payment and expense tracker app</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage3.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">PayNation</span> - Fast Banking at your finger tips</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage4.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Naija Blog</span> - Up to dat happenings in Naija and the world</h3>
+                </section>
+            </div>
+
+
+            <div id="appdev" class="tabcontent">
+                <!-- <h3>AppDev</h3>
+                <p>London is the capital city of England.</p> -->
+                <section class="w-fit h-fit lg:w-[550px]">
+                    <img src="img/midImage2.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Yuck</span> - Portfolio site for digital company in Seatle</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage1.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Paylar</span> - Africa’s first payment and expense tracker app</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage3.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">PayNation</span> - Fast Banking at your finger tips</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage4.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Naija Blog</span> - Up to dat happenings in Naija and the world</h3>
+                </section>
+            </div>
+            <div id="webdev" class="tabcontent">
+                <!-- <h3>Web Dev</h3>
+                <p>London is the capital city of England.</p> -->
+                <section class="w-fit h-fit lg:w-[550px]">
+                    <img src="img/midImage2.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Yuck</span> - Portfolio site for digital company in Seatle</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage1.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Paylar</span> - Africa’s first payment and expense tracker app</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage3.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">PayNation</span> - Fast Banking at your finger tips</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage4.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Naija Blog</span> - Up to dat happenings in Naija and the world</h3>
+                </section>
+            </div>
+
+            <div id="tvapps" class="tabcontent">
+                <!-- <h3>TV Apps</h3>
+                <p>Paris is the capital of France.</p> -->
+                <section class="w-fit h-fit lg:w-[550px]">
+                    <img src="img/midImage2.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Yuck</span> - Portfolio site for digital company in Seatle</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage1.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Paylar</span> - Africa’s first payment and expense tracker app</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage3.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">PayNation</span> - Fast Banking at your finger tips</h3>
+                </section>
+                <section class="w-fit h-fit lg:w-[550px] pt-5 lg:pt-20">
+                    <img src="img/midImage4.png" alt="" class="rounded-3xl">
+                    
+                    <h3 class="pt-3 items-center text-sm tracking-[0.6px] lg:pt-5 lg:text-xl"><span class="font-medium">Naija Blog</span> - Up to dat happenings in Naija and the world</h3>
+                </section>
+            </div>
+
+            <div id="itservices" class="tabcontent">
+                <h3>IT Services</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16 bg-cover object-fill bg-center py-10 text-center justify-center flex flex-col lg:h-screen lg:mt-36"
+        style="background-image: url('img/spaceImage2.png');">
+        <h2 class="text-white text-center text-2xl font-medium tracking-[2px] lg:tracking-[3px] lg:leading-normal lg:text-6xl">Have an idea?<br>Tell us
+        </h2>
+
+        <button id="openPopupBtn2"
+            class="text-white mt-6 border-[2px] py-2 px-5 rounded-full mx-auto flex justify-center w-fit text-sm lg:px-7 lg:py-4 lg:mt-16 lg:text-lg">Contact
+            Us</button>
+    </div>
+
+    <footer class="mx-5 block lg:flex lg:flex-row lg:mx-24 lg:gap-20">
+        <section class="flex flex-col pb-10 gap-5 lg:flex lg:flex-col lg:gap-8">
+            <img src="img/logo.png" alt="" class="bg-gray-200 bg-opacity-50 p-2 rounded-full w-[3.8rem]">
+            <h4 class="text-white ">Award winning design agency. <a href=""
+                    class="underline underline-offset-2">hello@starrpowr</a></h4>
+        </section>
+
+        <section class="block w-full justify-between lg:flex lg:flex-row">
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">What we do</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Home</a>
+                    <a href="" class="">Work</a>
+                    <a href="" class="">Services</a>
+                    <a href="" class="">About Starr Powr</a>
+                </section>
+            </section>
+
+
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Address</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <h4 class="">Lekki, Lagos,Nigeria</h4>
+                    <h4 class="">Instanbul, Turkey</h4>
+                </section>
+            </section>
+
+
+            <section class="">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Follow us</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Twitter</a>
+                    <a href="" class="">Instagram</a>
+                    <a href="" class="">LinkedIn</a>
+                    <a href="" class="">Behance</a>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <div class="mt-16 lg:mt-32">
+        <img src="img/STARR.png" alt="" class="w-full">
+    </div>
+
+    <div class="mt-10 mb-10 lg:mt-20">
+        <h5 class="tracking-[0.4px] text-[#FFFFFFB3] text-sm text-center">Starr Powr. All Rights Reserved.</h5>
+    </div>
+</body>
+
+</html>

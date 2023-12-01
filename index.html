@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Star Power</title>
+</head>
+
+<body>
+
+    <div class="hidden bg-white" id="popupForm">
+        <div id="pfInner" class="bg-black px-10 py-5 w-full lg:w-fit lg:px-20 lg:py-10">
+            <div class="flex justify-between mb-5 lg:mb-10">
+                <section class="">
+                    <section class="flex items-start">
+                        <h3 class="text-white font-medium text-xl tracking-[1.5px] lg:text-4xl" id="current-time"></h3>
+                        <p class="text-[#FFFFFF80] text-[0.625rem] lg:text-xs">WAT</p>
+                    </section>
+                    <h3 class="text-white text-base w-52 tracking-[0.5px] lg:tracking-[1px] lg:text-2xl">
+                        Let's build the future together
+                    </h3>
+                </section>
+                <section class="text-white font-light text-xl cursor-pointer lg:text-3xl" id="closePopupBtn">&times;</section>
+            </div>
+
+            <form class="">
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email">
+                </section>
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Project Name">
+                    <input type="text" placeholder="Budget">
+                </section>
+                <input class="lg:!w-[708px]" type="text" placeholder="Project Description">
+
+                <button
+                    class="text-white font-normal mt-4 rounded w-full bg-gradient-to-r from-[#90C] to-[#52006B] px-6 py-3"
+                    id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-cover bg-top lg:h-screen" style="background-image: url('img/fsBgImage.png');">
+        <div class="flex justify-between items-center mx-5 pt-6 bg-transparent lg:mx-20">
+            <img class="bg-gray-200 bg-opacity-50 p-3 rounded-full w-8 h-8 lg:w-20 lg:h-20" src="img/logo.png" alt="Logo">
+            <section id="headerLinks" class="hidden gap-10 items-center bg-transparent lg:flex">
+                <a href="#" class="!font-medium ">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+            <button id="openPopupBtn"
+                class=" text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:text-base lg:px-6 lg:py-2">Contact</button>
+        </div>
+
+        <div class="mt-6">
+            <section id="headerLinks" class="flex gap-6 items-center justify-center text-center bg-transparent lg:hidden">
+                <a href="#" class="!font-medium ">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+        </div>
+
+
+        <div class="text-center justify-center hidden flex-col items-center bg-transparent pt-28 px-24 lg:flex">
+            <!-- <p class="text-white font-semibold text-8xl font-poppins  text-center">Elevate Your Business With Tech</p> -->
+            <section class="flex items-center gap-[20px] bg-transparent">
+                <p class="text-white font-semibold text-7xl font-poppins">Elevate </p>
+                <img class="w-52 h-24 rounded-full" src="img/handImage.png" alt="">
+                <p class="text-white font-semibold text-7xl font-poppins"> Your</p>
+            </section>
+            <br>
+            <p class="text-white font-semibold text-7xl font-poppins">Business With Tech</p>
+        </div>
+
+        <p class="text-white font-poppins text-center text-2xl font-normal tracking-[0.6px] pt-10 w-[66%] mx-auto px-24 hidden lg:block">For
+            Agencies, Startups, and Entrepreneurs. Access high-end designs and stunning results.</p>
+
+        <button id="openPopupBtn2"
+            class="text-white border-[2px] border-white py-4 px-7 rounded-full font-normal  mx-auto hidden justify-center w-fit mt-9 text-xl lg:flex">Lets
+            Connect</button>
+
+        
+
+        <div class="text-center justify-center flex flex-col items-center bg-transparent pt-16 px-12 pb-16 lg:hidden">
+            <h2 class="text-white font-semibold text-2xl font-poppins">Elevate Your Business With Tech</h2>
+            <h4 class="text-white font-poppins text-center text-sm font-normal tracking-[0.6px] pt-5 mx-auto px-1">
+                For
+            Agencies, Startups, and Entrepreneurs. Access high-end designs and stunning results.
+            </h4>
+        </div>
+    </div>
+
+
+
+    <div class="mx-5 mt-5 lg:mt-10 lg:mx-24">
+        <section class="">
+            <!-- <img class="w-full h-40 object-cover relative lg:h-[33rem]" src="img/vid.jpg" alt=""> -->
+            <video class="w-full h-40 object-cover relative lg:h-[33rem]" controls autoplay><source src="videos/wotVideo.mp4" type="video/mp4"></video>
+        <h4 class="font-semibold tracking-wide text-white absolute -mt-[2.7rem] pl-3 text-sm lg:font-bold lg:-mt-[6.5rem] lg:pl-10 lg:text-3xl">Unlocking Tomorrow's Tech Today</h4>
+        </section>
+
+        <h4 class="text-white pt-2 text-xs lg:pt-4 lg:text-lg">Explore the cutting edge of innovation with Starr Power, where technology meets the future, and possibilities are limitless!</h4>
+    </div>
+
+
+
+
+
+
+    <div class="pt-8 lg:pt-16">
+        <h2 class="text-center text-base tracking-[1px] text-white font-medium pb-10 lg:pb-24 lg:text-3xl">Who are we?</h2>
+
+        <!-- w-full h-auto bg-cover  bg-top -->
+        <section class="hidden bg-no-repeat px-24 lg:block"
+            style="background-image: url('img/ssBgImage3.png'); box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);  background-size: 100% 100%;">
+
+            <section class="flex flex-col gap-[450px]">
+                <section class="flex justify-evenly gap-20">
+                    <section class="flex items-start gap-8">
+                        <h4 class="text-white text-lg">(01)</h4>
+                        <div class=" pt-3">
+                            <h2 class="text-3xl text-white font-medium pb-3">Development</h2>
+                            <p class="text-[#FFFFFFB3] text-lg">STARR POWER TECHNOLOGY is a professional technology
+                                development
+                                company offering web-based application development like cloud applications, mobile
+                                applications,
+                                financial applications and software development services.</p>
+                        </div>
+                    </section>
+                    <section class="flex items-start gap-8 pt-14">
+                        <h4 class="text-white text-lg">(02)</h4>
+                        <div class=" pt-3">
+                            <h2 class="text-3xl text-white font-medium pb-3">Goal Driven</h2>
+                            <p class="text-[#FFFFFFB3] text-lg">Our products and custom development solutions are
+                                designed to fit our client’s business requirements. Our goal is to help you achieve your
+                                organizational goals and objectives. We offer a wide range of expertise and experience
+                                in new and cutting-edge technologies, while providing you with effective and efficient
+                                solutions to your business challenges.</p>
+                        </div>
+                    </section>
+                </section>
+
+
+                <section class="flex justify-evenly gap-20 ">
+                    <section class="flex items-start gap-8">
+                        <h4 class="text-white text-lg">(03)</h4>
+                        <div class=" pt-3">
+                            <h2 class="text-3xl text-white font-medium pb-3">Quality</h2>
+                            <p class="text-[#FFFFFFB3] text-lg">We understand that each company has their unique
+                                requirements from the designing point of view of an application. We provide both complex
+                                functional requirements, while we seamlessly fuse eloquent design strategies. Our aim is
+                                to provide you with high quality mission critical web and app designing, with cost
+                                effectiveness, that acts as a bridge between the user and the technology.</p>
+                        </div>
+                    </section>
+                    <section class="flex items-start gap-8 pt-14">
+                        <h4 class="text-white text-lg">(04)</h4>
+                        <div class=" pt-3">
+                            <h2 class="text-3xl text-white font-medium pb-3">Goal Driven</h2>
+                            <p class="text-[#FFFFFFB3] text-lg">More than just simply building websites and mobile apps,
+                                we help our clients define their organization's goals, and most importantly – achieve
+                                those goals through their technological presence.</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+
+
+        <section class="block px-5 bg-no-repeat lg:hidden">
+
+            <section class="flex flex-col gap-7">
+                <section class="flex flex-col gap-7">
+                    <section class="flex items-start gap-2">
+                        <h4 class="text-white text-base">(01)</h4>
+                        <div class=" pt-1">
+                            <h2 class="text-xl text-white font-medium pb-3">Development</h2>
+                            <p class="text-[#FFFFFFB3] text-sm">STARR POWER TECHNOLOGY is a professional technology
+                                development
+                                company offering web-based application development like cloud applications, mobile
+                                applications,
+                                financial applications and software development services.</p>
+                        </div>
+                    </section>
+                    <section class="flex items-start gap-2">
+                        <h4 class="text-white text-base">(02)</h4>
+                        <div class=" pt-1">
+                            <h2 class="text-xl text-white font-medium pb-3">Goal Driven</h2>
+                            <p class="text-[#FFFFFFB3] text-sm">Our products and custom development solutions are
+                                designed to fit our client’s business requirements. Our goal is to help you achieve your
+                                organizational goals and objectives. We offer a wide range of expertise and experience
+                                in new and cutting-edge technologies, while providing you with effective and efficient
+                                solutions to your business challenges.</p>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="flex flex-col gap-7">
+                    <section class="flex items-start gap-2">
+                        <h4 class="text-white text-base">(03)</h4>
+                        <div class=" pt-1">
+                            <h2 class="text-xl text-white font-medium pb-3">Quality</h2>
+                            <p class="text-[#FFFFFFB3] text-sm">We understand that each company has their unique
+                                requirements from the designing point of view of an application. We provide both complex
+                                functional requirements, while we seamlessly fuse eloquent design strategies. Our aim is
+                                to provide you with high quality mission critical web and app designing, with cost
+                                effectiveness, that acts as a bridge between the user and the technology.</p>
+                        </div>
+                    </section>
+                    <section class="flex items-start gap-2">
+                        <h4 class="text-white text-base">(04)</h4>
+                        <div class=" pt-1">
+                            <h2 class="text-xl text-white font-medium pb-3">Goal Driven</h2>
+                            <p class="text-[#FFFFFFB3] text-sm">More than just simply building websites and mobile apps,
+                                we help our clients define their organization's goals, and most importantly – achieve
+                                those goals through their technological presence.</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+    </div>
+
+
+    <div class="mt-16 lg:mt-32">
+        <h2 id="bigGradientText" class="text-3xl tracking-[2px] font-semibold w-[80%] text-center mx-auto leading-normal lg:leading-normal lg:w-[45%] lg:font-medium lg:text-7xl">
+            Bring your ideas to life with our boundless ideas. Turn your idea into reality.</h2>
+    </div>
+
+    <div class="mt-8 lg:mt-16">
+        <h2 class="text-center text-base tracking-[1px] text-white font-medium pb-10 lg:pb-24 lg:text-3xl">Who we do</h2>
+
+        <section class="mx-5 flex flex-col gap-10 lg:gap-20 lg:mx-24">
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage1.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-2 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">Mobile App Design</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">We're here to build impeccable
+                        applications, dedicated to development and design. Every project involves stages of target
+                        audience research and prototype testing that ensure the end product is perfectly suited for your
+                        users!</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage2.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-3 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">Graphic Design</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">We create distinctive identities
+                        that gives you a solid platform for your communication efforts.</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage3.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-3 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">Web Development</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">Your website deserves more than
+                        just that be an online business card. Get a presentable and live website that reflects your
+                        identity.</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage4.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-3 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">App Development</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">Your app deserves more than just
+                        that be an online business card. Get a presentable and live website that reflects your identity.</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage5.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-3 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">TV Apps</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">Your website deserves more than
+                        just that be an online business card. Get a presentable and live website that reflects your
+                        identity.</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+            <section class="block gap-20 lg:flex">
+                <img src="img/midImage6.png" alt="" class="w-full object-cover lg:w-[31.25rem]">
+                <section class="">
+                    <h2 class="text-white font-semibold text-xl tracking-[1px] pt-2 pb-3 lg:pt-0 lg:font-medium lg:pb-6 lg:text-3xl">IT Services</h2>
+                    <h3 class="text-white font-normal text-sm tracking-[0.6px] pb-4 lg:text-lg">Our team of experienced designers
+                        and IT professionals is passionate about creating beautiful, effective designs and implementing
+                        robust, secure IT solutions. We are experts in our field, and we are always up-to-date on the
+                        latest design and technology trends.</h3>
+                    <button class="text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:px-6 lg:text-base">Read
+                        More</button>
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <div class="mt-12 lg:mx-24">
+        <h2 class="text-center text-base tracking-[1px] text-white font-medium pb-10 lg:pb-24 lg:text-3xl">Our Clients</h2>
+
+        <div class="ml-0 lg:ml-24">
+            <div id="scrollableDiv" class="flex  overflow-x-scroll snap-start whitespace-nowrap overflow-y-hidden gap-4 lg:gap-7">
+                <section class="bg-[#121212] rounded-2xl lg:w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sandra Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Vphla Inc.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="bg-[#121212] rounded-2xl w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sam Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Crop NG.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="bg-[#121212] rounded-2xl w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sam Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Crop NG.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="bg-[#121212] rounded-2xl w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sam Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Crop NG.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="bg-[#121212] rounded-2xl w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sam Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Crop NG.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+
+                <section class="bg-[#121212] rounded-2xl w-[480px]">
+                    <section class="px-8 py-9">
+                        <h4 class="text-white tracking-[0.4px] pb-7">I was looking for a design agency that could help
+                            me
+                            with my
+                            new website. I found [Company Name] online and was immediately impressed with their
+                            portfolio. I
+                            decided to give them a call and I'm so glad I did.</h4>
+                        <section class="flex items-center gap-8">
+                            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                class="w-16 h-16 rounded-full object-cover" alt="">
+                            <section class="">
+                                <h4 class="text-white font-medium tracking-[0.5px]">Sam Altman</h4>
+                                <h4 class="text-[#FFFFFFB3] font-normal tracking-[0.5px]">Crop NG.</h4>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <section class="mt-8 lg:mt-16">
+        <a href="" class="text-white mt-12 border-[2px] py-4 px-7 rounded-full mx-auto flex justify-center text-sm w-fit lg:text-base lg:mt-24">See
+            More</a>
+    </section>
+
+
+    <div class="mt-16 lg:mt-36">
+        <img src="img/textRow.png" class="object-cover w-full" alt="">
+    </div>
+
+    <div class="mt-16 bg-cover object-fill bg-center py-10 text-center justify-center flex flex-col lg:h-screen lg:mt-36"
+        style="background-image: url('img/spaceImage2.png');">
+        <h2 class="text-white text-center text-2xl font-medium tracking-[2px] lg:tracking-[3px] lg:leading-normal lg:text-6xl">Have an idea?<br>Tell us
+        </h2>
+
+        <button id="openPopupBtn2"
+            class="text-white mt-6 border-[2px] py-2 px-5 rounded-full mx-auto flex justify-center w-fit text-sm lg:px-7 lg:py-4 lg:mt-16 lg:text-lg">Contact
+            Us</button>
+    </div>
+
+    <footer class="mx-5 block lg:flex lg:flex-row lg:mx-24 lg:gap-20">
+        <section class="flex flex-col pb-10 gap-5 lg:flex lg:flex-col lg:gap-8">
+            <img src="img/logo.png" alt="" class="bg-gray-200 bg-opacity-50 p-2 rounded-full w-[3.8rem]">
+            <h4 class="text-white ">Award winning design agency. <a href=""
+                    class="underline underline-offset-2">hello@starrpowr</a></h4>
+        </section>
+
+        <section class="block w-full justify-between lg:flex lg:flex-row">
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">What we do</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Home</a>
+                    <a href="" class="">Work</a>
+                    <a href="" class="">Services</a>
+                    <a href="" class="">About Starr Powr</a>
+                </section>
+            </section>
+
+
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Address</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <h4 class="">Lekki, Lagos,Nigeria</h4>
+                    <h4 class="">Instanbul, Turkey</h4>
+                </section>
+            </section>
+
+
+            <section class="">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Follow us</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Twitter</a>
+                    <a href="" class="">Instagram</a>
+                    <a href="" class="">LinkedIn</a>
+                    <a href="" class="">Behance</a>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <div class="mt-16 lg:mt-32">
+        <img src="img/STARR.png" alt="" class="w-full">
+    </div>
+
+    <div class="mt-10 mb-10 lg:mt-20">
+        <h5 class="tracking-[0.4px] text-[#FFFFFFB3] text-sm text-center">Starr Powr. All Rights Reserved.</h5>
+    </div>
+
+</body>
+
+</html>

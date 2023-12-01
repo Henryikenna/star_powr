@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>About - Star Power</title>
+</head>
+<body>
+    <div class="hidden bg-white" id="popupForm">
+        <div id="pfInner" class="bg-black px-10 py-5 w-full lg:w-fit lg:px-20 lg:py-10">
+            <div class="flex justify-between mb-5 lg:mb-10">
+                <section class="">
+                    <section class="flex items-start">
+                        <h3 class="text-white font-medium text-xl tracking-[1.5px] lg:text-4xl" id="current-time"></h3>
+                        <p class="text-[#FFFFFF80] text-[0.625rem] lg:text-xs">WAT</p>
+                    </section>
+                    <h3 class="text-white text-base w-52 tracking-[0.5px] lg:tracking-[1px] lg:text-2xl">
+                        Let's build the future together
+                    </h3>
+                </section>
+                <section class="text-white font-light text-xl cursor-pointer lg:text-3xl" id="closePopupBtn">&times;</section>
+            </div>
+
+            <form class="">
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email">
+                </section>
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Project Name">
+                    <input type="text" placeholder="Budget">
+                </section>
+                <input class="lg:!w-[708px]" type="text" placeholder="Project Description">
+
+                <button
+                    class="text-white font-normal mt-4 rounded w-full bg-gradient-to-r from-[#90C] to-[#52006B] px-6 py-3"
+                    id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="bg-cover bg-top" style="background-image: url('img/psBgImage.png');">
+        <div class="flex justify-between items-center mx-5 pt-6 bg-transparent lg:mx-20">
+            <!-- <img class="bg-transparent w-8 h-8 lg:w-fit lg:h-fit" src="img/logo.svg" alt="Logo"> -->
+            <img class="bg-gray-200 bg-opacity-50 p-3 rounded-full w-8 h-8 lg:w-20 lg:h-20" src="img/logo.png" alt="Logo">
+            <section id="headerLinks" class="hidden gap-10 items-center bg-transparent lg:flex">
+                <a href="index.html" class="">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="#" class="!font-medium">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+            <button id="openPopupBtn"
+                class=" text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:text-base lg:px-6 lg:py-2">Contact</button>
+        </div>
+
+        <div class="mt-6">
+            <section id="headerLinks" class="flex gap-6 items-center justify-center text-center bg-transparent lg:hidden">
+                <a href="index.html" class="">Work</a>
+                <a href="what-we-do.html" class="">What we do</a>
+                <a href="#" class="!font-medium">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+        </div>
+
+        <section class="text-center justify-center flex flex-col items-center pt-16 pb-10 lg:pt-44 lg:pb-20">
+            <h1 class="text-white tracking-[1px] font-medium text-2xl pb-4 px-5 lg:tracking-[2px] lg:text-7xl lg:px-24 lg:pb-8">About Us</h1>
+            <h3 class="text-white tracking-[0.3px] text-[0.75rem] w-full leading-relaxed px-5 lg:leading-loose lg:tracking-[0.6px] lg:text-[1.375rem] lg:px-24">Welcome to our corner of the digital universe! We are a dynamic and passionate team dedicated to crafting unforgettable experiences for our users. Established with a shared love for innovation, creativity, and a touch of eccentricity, we're on a mission to redefine the way you interact with the online world.
+
+                At the heart of our ethos is a commitment to excellence and a belief that every click should spark joy. Whether you're a seasoned explorer of the web or a digital newcomer, our platform is designed to be your trusty guide, unlocking a world of possibilities at your fingertips.
+                
+                Our journey began with a simple idea: to create a space where imagination knows no bounds. From late-night brainstorming sessions to the final lines of code, we've poured our energy into building a digital haven that reflects our values of inclusivity, curiosity, and a relentless pursuit of the extraordinary.
+                
+                In this ever-evolving landscape, we stand as both pioneers and enthusiasts. Expect the unexpected as we continue to push boundaries, challenge the status quo, and sprinkle a bit of magic into your online adventures. Join us on this thrilling ride, and let's make the internet a place where dreams come alive.
+                
+                Thank you for being part of our story. Together, we're not just navigating the web; we're shaping it. Welcome to a world where every click is a step into the extraordinary!</h3>
+        </section>
+    </div>
+
+    
+</body>
+</html>

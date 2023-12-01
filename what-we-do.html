@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>What We Do - Star Power</title>
+</head>
+
+<body>
+    <div class="hidden bg-white" id="popupForm">
+        <div id="pfInner" class="bg-black px-10 py-5 w-full lg:w-fit lg:px-20 lg:py-10">
+            <div class="flex justify-between mb-5 lg:mb-10">
+                <section class="">
+                    <section class="flex items-start">
+                        <h3 class="text-white font-medium text-xl tracking-[1.5px] lg:text-4xl" id="current-time"></h3>
+                        <p class="text-[#FFFFFF80] text-[0.625rem] lg:text-xs">WAT</p>
+                    </section>
+                    <h3 class="text-white text-base w-52 tracking-[0.5px] lg:tracking-[1px] lg:text-2xl">
+                        Let's build the future together
+                    </h3>
+                </section>
+                <section class="text-white font-light text-xl cursor-pointer lg:text-3xl" id="closePopupBtn">&times;</section>
+            </div>
+
+            <form class="">
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email">
+                </section>
+                <section class="flex flex-col gap-2 pb-4 lg:flex-row">
+                    <input type="text" placeholder="Project Name">
+                    <input type="text" placeholder="Budget">
+                </section>
+                <input class="lg:!w-[708px]" type="text" placeholder="Project Description">
+
+                <button
+                    class="text-white font-normal mt-4 rounded w-full bg-gradient-to-r from-[#90C] to-[#52006B] px-6 py-3"
+                    id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="bg-cover bg-top lg:h-screen" style="background-image: url('img/wwdBgImage.png');">
+        <div class="flex justify-between items-center mx-5 pt-6 bg-transparent lg:mx-20">
+            <img class="bg-gray-200 bg-opacity-50 p-3 rounded-full w-8 h-8 lg:w-20 lg:h-20" src="img/logo.png" alt="Logo">
+            <section id="headerLinks" class="hidden gap-10 items-center bg-transparent lg:flex">
+                <a href="index.html" class="">Work</a>
+                <a href="#" class="!font-medium">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+            <button id="openPopupBtn"
+                class=" text-white bg-gradient-to-r from-[#90C] to-[#52006B] px-4 py-2 rounded-full text-[0.625rem] lg:text-base lg:px-6 lg:py-2">Contact</button>
+        </div>
+
+        <div class="mt-6">
+            <section id="headerLinks" class="flex gap-6 items-center justify-center text-center bg-transparent lg:hidden">
+                <a href="index.html" class="">Work</a>
+                <a href="#" class="!font-medium">What we do</a>
+                <a href="about.html" class="">About</a>
+                <a href="portfolio.html" class="">Portfolio</a>
+            </section>
+        </div>
+
+        <section class="text-center justify-center flex flex-col items-center pt-16 pb-16 lg:pb-0 lg:pt-44">
+            <h1 class="text-white tracking-[1px] font-medium text-2xl pb-4 lg:pb-8 lg:tracking-[2px] lg:text-7xl">What we do</h1>
+            <h3 class="text-white tracking-[0.3px] text-[0.75rem] w-[80%] leading-relaxed lg:leading-loose lg:tracking-[0.6px] lg:w-[48%] lg:text-[1.375rem]">We shape human-centric
+                products and services that improve the lives of thousands every single day.</h3>
+        </section>
+    </div>
+
+
+    <div class="mx-5 mt-8 flex flex-col lg:mt-16 lg:flex-row lg:mx-24">
+        <h2 class="text-white font-medium tracking-[0.4px] text-lg w-full leading-relaxed pb-4 lg:tracking-[0.8px] lg:pb-0 lg:leading-loose lg:w-[40%] lg:text-3xl">Born from a passion for the
+            digital world and a desire to challenge the norms of design and technology</h2>
+
+        <h4 class="text-white font-normal tracking-[0.4px] text-sm w-full leading-relaxed lg:w-[60%] lg:text-lg">Our goal is to bring your
+            vision to life with innovation, creativity, and a commitment to quality. We help you stand out in a crowded
+            market and turn your ideas into attractive and functional products of the future.</h4>
+    </div>
+
+    <div class="mt-16 lg:mt-32">
+        <h2 id="bigGradientText" class="text-3xl tracking-[2px] font-semibold w-[80%] text-center mx-auto leading-normal lg:leading-normal lg:w-[45%] lg:font-medium lg:text-7xl">
+            Web Design<br>
+            Web app design<br>
+            Expertise<br>
+            Visual Identity<br>
+            Interface Development<br>
+            Web development<br>
+            Research<br>
+            Support
+        </h2>
+    </div>
+
+    <div class="flex mx-5 gap-3 mt-9 lg:mx-24 lg:mt-16">
+        <img src="img/midImage6.png" class="w-[50%]" alt="">
+        <img src="img/midImage4.png" class="w-[50%]" alt="">
+    </div>
+
+    <div class="mx-5 mt-8 lg:mx-5 lg:mt-16">
+        <h1 class="text-white font-medium text-xl leading-relaxed lg:text-5xl">We make digital products of immersive design level
+            with scalability in mind. Implementing it on a turnkey basis and taking all integrations due to fast Webflow
+            solutions.</h1>
+    </div>
+
+    <div class="mt-14 mx-5 lg:mt-28 lg:mx-24">
+        <section class="flex flex-col gap-6 lg:gap-14 lg:flex-row">
+            <h2 class="text-white text-2xl font-medium lg:text-6xl">Graphics</h2>
+
+            <section class="">
+                <section class="flex flex-wrap gap-x-3 gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-16">
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Design Phase</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">We collect general information about customer’s business and product (key users / competitors / project goals), conduct fundamental research and create Information Architecture.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">UX Development</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">We ensure that every piece of the necessary information has been placed on a screen and create wireframes.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Concept</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">We create 3-4 main screens of the app to find the visual direction.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">UI Development</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">Finalizing the UI for the whole project resting on the Concept Screens.</h4>
+                    </section>
+                </section>
+
+                <section class="pt-10 lg:pt-20">
+                    <h2 class="text-white text-xl tracking-[0.4px] lg:tracking-[0.8px] lg:text-3xl">Areas</h2>
+                    
+                    <section class="pt-4 flex flex-wrap gap-x-2 gap-y-4 lg:gap-x-3 lg:gap-y-5 lg:pt-8">
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Visual Identity</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Web Design</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">UI & UX Design</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">3D Design</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Development</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Quality Assurance</h4>
+                    </section>
+                </section>
+
+                
+            </section>
+
+            
+        </section>
+
+        <hr class="text-white mt-8 mb-10 lg:mt-16 lg:mb-20">
+        
+        <section class="flex flex-col gap-6 lg:gap-14 lg:flex-row">
+            <h2 class="text-white text-2xl font-medium lg:text-6xl">Developer</h2>
+
+            <section class="">
+                <section class="flex flex-wrap gap-x-3 gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-16">
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Design Review</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">Completed layouts go through solid review to make sure it meets the design and required business logic.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Design Delivery</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">We work closely with the developers to make sure all peculiarities that might pop up during the development are covered. If we are developing project, then this stage is skipped.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Customer Review</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">An iteration when the customer gives feedback on staging view before deployment to production environment.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Development</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">Development takes place in several stages. First, we develop static layouts for all resolutions. Next, we set up the functionality and lastly move on to the animation components.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Testing</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">When testing, we check all screen resolutions, all functionality in different browsers and on different devices. If errors are found, we fix them after all testing.</h4>
+                    </section>
+                    <section class="">
+                        <h3 class="text-[#FFFFFF80] tracking-[0.4px] text-xl pb-2 lg:pb-3 lg:tracking-[0.8px] lg:text-3xl">Broadcast</h3>
+                        <h4 class="text-white tracking-[0.2px] text-sm leading-normal lg:tracking-[0.4px] lg:leading-relaxed lg:text-lg">Upon completion of the project, we compile a guide on how to use the CMS system (document) or schedule a call to show you how to do it. After the project is considered completed.</h4>
+                    </section>
+                </section>
+
+                <section class="pt-10 lg:pt-20">
+                    <h2 class="text-white text-xl tracking-[0.4px] lg:tracking-[0.8px] lg:text-3xl">Areas</h2>
+                    
+                    <section class="pt-4 flex flex-wrap gap-x-2 gap-y-4 lg:gap-x-3 lg:gap-y-5 lg:pt-8">
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Java</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Kotlin</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Swift</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Node</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Redis</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">Javascript</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">React</h4>
+                        <h4 class="text-white border w-fit px-3 py-2 rounded-full text-sm lg:text-base lg:px-5 lg:py-3">CSS 3</h4>
+                    </section>
+                </section>
+            </section>
+
+            
+        </section>
+    </div>
+
+    <div class="mt-10 px-5 pt-6 pb-32 bg-no-repeat lg:px-24 lg:mt-20 lg:pt-20 lg:pb-48" style="background: url('img/windowWall.png'); background-size: 100% 100%;">
+        <h2 class="font-medium text-black text-lg w-[85%] leading-relaxed lg:text-4xl lg:w-[50%]">WE BUILD STABLE CODE USING IN - HOUSE SOLUTIONS</h2>
+
+        <h5 class="font-normal text-black text-left flex float-right w-[85%] leading-relaxed pt-10 text-sm lg:w-[50%] lg:text-lg lg:pt-20">Developing digital products since 2020. We help brings ideas to life and create digital products that work</h5>
+    </div>
+
+
+    <div class="mt-16 bg-cover object-fill bg-center py-10 text-center justify-center flex flex-col lg:h-screen lg:mt-36"
+        style="background-image: url('img/spaceImage2.png');">
+        <h2 class="text-white text-center text-2xl font-medium tracking-[2px] lg:tracking-[3px] lg:leading-normal lg:text-6xl">Have an idea?<br>Tell us
+        </h2>
+
+        <button id="openPopupBtn2"
+            class="text-white mt-6 border-[2px] py-2 px-5 rounded-full mx-auto flex justify-center w-fit text-sm lg:px-7 lg:py-4 lg:mt-16 lg:text-lg">Contact
+            Us</button>
+    </div>
+
+    <footer class="mx-5 block lg:flex lg:flex-row lg:mx-24 lg:gap-20">
+        <section class="flex flex-col pb-10 gap-5 lg:flex lg:flex-col lg:gap-8">
+            <img src="img/logo.png" alt="" class="bg-gray-200 bg-opacity-50 p-2 rounded-full w-[3.8rem]">
+            <h4 class="text-white ">Award winning design agency. <a href=""
+                    class="underline underline-offset-2">hello@starrpowr</a></h4>
+        </section>
+
+        <section class="block w-full justify-between lg:flex lg:flex-row">
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">What we do</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Home</a>
+                    <a href="" class="">Work</a>
+                    <a href="" class="">Services</a>
+                    <a href="" class="">About Starr Powr</a>
+                </section>
+            </section>
+
+
+            <section class="pb-8 lg:pb-0">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Address</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <h4 class="">Lekki, Lagos,Nigeria</h4>
+                    <h4 class="">Instanbul, Turkey</h4>
+                </section>
+            </section>
+
+
+            <section class="">
+                <h3 class="text-white font-medium tracking-[0.6px] text-lg lg:text-xl">Follow us</h3>
+
+                <section class="text-white flex flex-col pt-4 gap-3 lg:pt-7">
+                    <a href="" class="">Twitter</a>
+                    <a href="" class="">Instagram</a>
+                    <a href="" class="">LinkedIn</a>
+                    <a href="" class="">Behance</a>
+                </section>
+            </section>
+        </section>
+    </footer>
+
+    <div class="mt-16 lg:mt-32">
+        <img src="img/STARR.png" alt="" class="w-full">
+    </div>
+
+    <div class="mt-10 mb-10 lg:mt-20">
+        <h5 class="tracking-[0.4px] text-[#FFFFFFB3] text-sm text-center">Starr Powr. All Rights Reserved.</h5>
+    </div>
+</body>
+
+</html>
